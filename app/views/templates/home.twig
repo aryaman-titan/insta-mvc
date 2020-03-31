@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>CodePen - Animated Login and Sign up</title>
+    <title>Instagram Login Page</title>
     {% block stylesheets%}
     <link
       href="https://fonts.googleapis.com/css?family=Montserrat:300, 400, 500"
@@ -46,11 +46,12 @@
         <div class="user_options-forms" id="user_options-forms">
           <div class="user_forms-login">
             <h2 class="forms_title">Login</h2>
-            <form class="forms_form">
+            <form class="forms_form" id="login-form">
               <fieldset class="forms_fieldset">
                 <div class="forms_field">
                   <input
                     type="email"
+                    id="email"
                     placeholder="Email"
                     class="forms_field-input"
                     required
@@ -59,6 +60,7 @@
                 </div>
                 <div class="forms_field">
                   <input
+                    id="password"
                     type="password"
                     placeholder="Password"
                     class="forms_field-input"
@@ -80,13 +82,14 @@
           </div>
           <div class="user_forms-signup">
             <h2 class="forms_title">Sign Up</h2>
-            <form class="forms_form">
+            <form class="forms_form" id = "signup-form">
               <fieldset class="forms_fieldset">
                 <div class="forms_field">
                   <input
                     type="text"
                     placeholder="Full Name"
                     class="forms_field-input"
+                    id = "reg_username"
                     required
                   />
                 </div>
@@ -95,12 +98,14 @@
                     type="email"
                     placeholder="Email"
                     class="forms_field-input"
+                    id = "reg_email"
                     required
                   />
                 </div>
                 <div class="forms_field">
                   <input
                     type="password"
+                    id="reg_password"
                     placeholder="Password"
                     class="forms_field-input"
                     required
