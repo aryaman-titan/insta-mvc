@@ -32,6 +32,6 @@ class Login{
 class Logout{
     public function get(){
         session_unset();
-        echo \View\Loader::make()
+        header("Location: /");
     }
 }
